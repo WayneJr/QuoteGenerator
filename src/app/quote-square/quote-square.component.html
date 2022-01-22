@@ -1,0 +1,20 @@
+<div class="bg-white py-16 px-3.125 flex flex-col">
+  <div class="text-1.75em">
+    <fa-icon class="text-1em" [icon]="faQuoteLeft"></fa-icon>
+    {{quote.quote}}
+  </div>
+  <div>
+    <div class="p-4 block float-right">
+      - {{quote.author}}
+    </div>
+  </div>
+  <div class="flex flex-row justify-between p-4">
+    <div class="flex flex-row">
+      <a [href]="twitterUrl" target="_blank" class="p-4 mr-4 text-xl text-white" id="twitter" ><fa-icon [icon]="faTwitter"></fa-icon></a>
+      <a href="" target="_blank" class="p-4 text-xl text-white" id="facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+    </div>
+    <div>
+      <button class="p-4 text-white text-xl font-semibold" id="next-quote" (click)="nextQuote()" >New Quote</button>
+    </div>
+  </div>
+</div>
